@@ -1,0 +1,17 @@
+C:\workspace_CQRS\maintenance-platform\vehicle-command-service\src\main\java\com\autotech\vehicle\command\messaging\events\VehicleUpdatedEvent.java
+C:\workspace_CQRS\maintenance-platform\vehicle-command-service\src\main\java\com\autotech\vehicle\command\dto\VehicleOwnershipChangeRequestDto.java
+C:\workspace_CQRS\maintenance-platform\vehicle-command-service\src\main\java\com\autotech\vehicle\command\messaging\KafkaDomainEventPublisher.java
+C:\workspace_CQRS\maintenance-platform\vehicle-command-service\src\main\java\com\autotech\vehicle\command\messaging\events\VehicleRegisteredEvent.java
+C:\workspace_CQRS\maintenance-platform\vehicle-command-service\src\main\java\com\autotech\vehicle\command\service\VehicleCommandService.java
+C:\workspace_CQRS\maintenance-platform\vehicle-command-service\src\main\java\com\autotech\vehicle\command\service\VehicleCommandServiceImpl.java
+C:\workspace_CQRS\maintenance-platform\vehicle-command-service\src\main\java\com\autotech\vehicle\command\controller\VehicleCommandController.java
+C:\workspace_CQRS\maintenance-platform\vehicle-command-service\src\main\java\com\autotech\vehicle\command\dto\VehicleResponseDto.java
+C:\workspace_CQRS\maintenance-platform\vehicle-command-service\src\main\java\com\autotech\vehicle\command\dto\VehicleUpdateRequestDto.java
+C:\workspace_CQRS\maintenance-platform\vehicle-command-service\src\main\java\com\autotech\vehicle\command\dto\VehicleRegisterRequestDto.java
+C:\workspace_CQRS\maintenance-platform\vehicle-command-service\src\main\java\com\autotech\vehicle\command\VehicleCommandApplication.java
+C:\workspace_CQRS\maintenance-platform\vehicle-command-service\src\main\java\com\autotech\vehicle\command\repository\VehicleRepository.java
+C:\workspace_CQRS\maintenance-platform\vehicle-command-service\src\main\java\com\autotech\vehicle\command\config\KafkaProducerConfig.java
+C:\workspace_CQRS\maintenance-platform\vehicle-command-service\src\main\java\com\autotech\vehicle\command\messaging\events\VehicleOwnershipChangedEvent.java
+C:\workspace_CQRS\maintenance-platform\vehicle-command-service\src\main\java\com\autotech\vehicle\command\messaging\DomainEventPublisher.java
+C:\workspace_CQRS\maintenance-platform\vehicle-command-service\src\main\java\com\autotech\vehicle\command\entity\VehicleEntity.java
+C:\workspace_CQRS\maintenance-platform\vehicle-command-service\src\main\java\com\autotech\vehicle\command\mapper\VehicleMapper.java

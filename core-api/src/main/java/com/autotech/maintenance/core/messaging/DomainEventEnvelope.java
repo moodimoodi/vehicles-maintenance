@@ -1,4 +1,4 @@
-package com.autotech.maintenance.command.messaging;
+package com.autotech.maintenance.core.messaging;
 
 import lombok.Builder;
 import lombok.Data;

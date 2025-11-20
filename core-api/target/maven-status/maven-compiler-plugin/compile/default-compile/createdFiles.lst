@@ -1,0 +1,8 @@
+com\autotech\maintenance\core\events\maintenance\MaintenanceStatusChangedEvent.class
+com\autotech\maintenance\core\messaging\DomainEventEnvelope.class
+com\autotech\maintenance\core\events\maintenance\MaintenanceScheduledEvent$MaintenanceScheduledEventBuilder.class
+com\autotech\maintenance\core\messaging\DomainEventEnvelope$DomainEventEnvelopeBuilder.class
+com\autotech\maintenance\core\events\maintenance\MaintenanceStatusChangedEvent$MaintenanceStatusChangedEventBuilder.class
+com\autotech\maintenance\core\events\maintenance\MaintenanceCompletedEvent$MaintenanceCompletedEventBuilder.class
+com\autotech\maintenance\core\events\maintenance\MaintenanceScheduledEvent.class
+com\autotech\maintenance\core\events\maintenance\MaintenanceCompletedEvent.class

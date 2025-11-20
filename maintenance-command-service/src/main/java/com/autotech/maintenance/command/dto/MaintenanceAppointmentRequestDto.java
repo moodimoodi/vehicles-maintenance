@@ -12,7 +12,7 @@ public class MaintenanceAppointmentRequestDto {
     private String customerId;
     private String workshopId;
     private LocalDate date;
-    private String slot; // "08:00-10:00"
+    private String slot;
     private String reason;
     private List<String> requestedServices;
 }
