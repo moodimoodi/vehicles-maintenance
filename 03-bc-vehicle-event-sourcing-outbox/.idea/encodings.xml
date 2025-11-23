@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/maintenance-platform/core-api/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/maintenance-platform/core-api/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/maintenance-platform/maintenance-command-service-es/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/maintenance-platform/maintenance-command-service-es/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/maintenance-platform/maintenance-command-service/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/maintenance-platform/maintenance-command-service/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/maintenance-platform/maintenance-query-service-es/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/maintenance-platform/maintenance-query-service-es/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/maintenance-platform/maintenance-query-service/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/maintenance-platform/maintenance-query-service/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/maintenance-platform/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/maintenance-platform/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/maintenance-platform/vehicle-command-service/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/maintenance-platform/vehicle-command-service/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/maintenance-platform/vehicle-query-service/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/maintenance-platform/vehicle-query-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maintenance-command-service-es/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maintenance-command-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maintenance-query-service-es/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maintenance-query-service-es/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maintenance-query-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vehicle-command-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vehicle-query-service/src/main/java" charset="UTF-8" />
   </component>
 </project>

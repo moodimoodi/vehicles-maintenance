@@ -1,0 +1,16 @@
+C:\workspace_CQRS\maintenance-platform\vehicle-query-service\src\main\java\com\autotech\vehicle\query\mapper\VehicleViewMapper.java
+C:\workspace_CQRS\maintenance-platform\vehicle-query-service\src\main\java\com\autotech\vehicle\query\messaging\DomainEventEnvelope.java
+C:\workspace_CQRS\maintenance-platform\vehicle-query-service\src\main\java\com\autotech\vehicle\query\messaging\VehicleEventsListener.java
+C:\workspace_CQRS\maintenance-platform\vehicle-query-service\src\main\java\com\autotech\vehicle\query\entity\CustomerGarageViewEntity.java
+C:\workspace_CQRS\maintenance-platform\vehicle-query-service\src\main\java\com\autotech\vehicle\query\messaging\events\VehicleOwnershipChangedEvent.java
+C:\workspace_CQRS\maintenance-platform\vehicle-query-service\src\main\java\com\autotech\vehicle\query\repository\CustomerGarageViewRepository.java
+C:\workspace_CQRS\maintenance-platform\vehicle-query-service\src\main\java\com\autotech\vehicle\query\service\VehicleQueryServiceImpl.java
+C:\workspace_CQRS\maintenance-platform\vehicle-query-service\src\main\java\com\autotech\vehicle\query\dto\VehicleOverviewResponseDto.java
+C:\workspace_CQRS\maintenance-platform\vehicle-query-service\src\main\java\com\autotech\vehicle\query\dto\CustomerVehicleResponseDto.java
+C:\workspace_CQRS\maintenance-platform\vehicle-query-service\src\main\java\com\autotech\vehicle\query\messaging\events\VehicleRegisteredEvent.java
+C:\workspace_CQRS\maintenance-platform\vehicle-query-service\src\main\java\com\autotech\vehicle\query\entity\VehicleOverviewViewEntity.java
+C:\workspace_CQRS\maintenance-platform\vehicle-query-service\src\main\java\com\autotech\vehicle\query\VehicleQueryApplication.java
+C:\workspace_CQRS\maintenance-platform\vehicle-query-service\src\main\java\com\autotech\vehicle\query\service\VehicleQueryService.java
+C:\workspace_CQRS\maintenance-platform\vehicle-query-service\src\main\java\com\autotech\vehicle\query\repository\VehicleOverviewViewRepository.java
+C:\workspace_CQRS\maintenance-platform\vehicle-query-service\src\main\java\com\autotech\vehicle\query\controller\VehicleQueryController.java
+C:\workspace_CQRS\maintenance-platform\vehicle-query-service\src\main\java\com\autotech\vehicle\query\messaging\events\VehicleUpdatedEvent.java

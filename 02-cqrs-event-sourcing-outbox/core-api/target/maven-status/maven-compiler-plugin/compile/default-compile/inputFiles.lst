@@ -1,0 +1,4 @@
+C:\workspace_CQRS\autotech-cqrs-demo\02-cqrs-event-sourcing-outbox\maintenance-platform\core-api\src\main\java\com\autotech\maintenance\core\events\maintenance\MaintenanceCompletedEvent.java
+C:\workspace_CQRS\autotech-cqrs-demo\02-cqrs-event-sourcing-outbox\maintenance-platform\core-api\src\main\java\com\autotech\maintenance\core\events\maintenance\MaintenanceScheduledEvent.java
+C:\workspace_CQRS\autotech-cqrs-demo\02-cqrs-event-sourcing-outbox\maintenance-platform\core-api\src\main\java\com\autotech\maintenance\core\events\maintenance\MaintenanceStatusChangedEvent.java
+C:\workspace_CQRS\autotech-cqrs-demo\02-cqrs-event-sourcing-outbox\maintenance-platform\core-api\src\main\java\com\autotech\maintenance\core\messaging\DomainEventEnvelope.java
