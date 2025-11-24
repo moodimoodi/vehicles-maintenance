@@ -1,4 +1,0 @@
-C:\workspace_CQRS\maintenance-platform\core-api\src\main\java\com\autotech\maintenance\core\events\maintenance\MaintenanceCompletedEvent.java
-C:\workspace_CQRS\maintenance-platform\core-api\src\main\java\com\autotech\maintenance\core\events\maintenance\MaintenanceScheduledEvent.java
-C:\workspace_CQRS\maintenance-platform\core-api\src\main\java\com\autotech\maintenance\core\events\maintenance\MaintenanceStatusChangedEvent.java
-C:\workspace_CQRS\maintenance-platform\core-api\src\main\java\com\autotech\maintenance\core\messaging\DomainEventEnvelope.java

@@ -1,4 +1,0 @@
-com\autotech\vehicle\command\messaging\VehicleOutboxRelayTest.class
-com\autotech\vehicle\command\service\VehicleCommandServiceImplTest.class
-com\autotech\vehicle\command\domain\aggregate\VehicleTest.class
-com\autotech\vehicle\command\eventstore\JpaVehicleEventStoreTest.class
