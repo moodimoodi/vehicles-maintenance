@@ -1,7 +1,8 @@
 package com.autotech.vehicle.command.service;
 
-import com.autotech.vehicle.command.domain.aggregate.Vehicle;
-import com.autotech.vehicle.command.domain.repository.VehicleAggregateRepository;
+import com.autotech.vehicle.command.domain.aggregate.VehicleAggregate;
+import com.autotech.vehicle.command.domain.command.*;
+import com.autotech.vehicle.command.domain.handler.VehicleCommandHandler;
 import com.autotech.vehicle.command.dto.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -12,11 +13,11 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 public class VehicleCommandServiceImpl implements VehicleCommandService {
 
-    private final VehicleAggregateRepository repository;
+    private final VehicleCommandHandler handler;
 
     @Override
-    public VehicleResponse register(VehicleRegisterRequest request) {
-        Vehicle vehicle = Vehicle.registerNew(
+    public VehicleResponseDto register(VehicleRegisterRequestDto request) {
+        RegisterVehicleCommand cmd = new RegisterVehicleCommand(
                 request.getVin(),
                 request.getBrand(),
                 request.getModel(),
@@ -25,49 +26,53 @@ public class VehicleCommandServiceImpl implements VehicleCommandService {
                 request.getStatus(),
                 request.getOwnerId()
         );
-        repository.save(vehicle);
-        return toResponse(vehicle);
+
+        var agg = handler.handle(cmd);
+        return toResponse(agg);
     }
 
     @Override
-    public VehicleResponse updateDetails(String vin, VehicleUpdateDetailsRequest request) {
-        Vehicle vehicle = repository.load(vin);
-        vehicle.updateDetails(
+    public VehicleResponseDto updateDetails(String vin, VehicleUpdateDetailsRequestDto request) {
+        UpdateVehicleDetailsCommand cmd = new UpdateVehicleDetailsCommand(
+                vin,
                 request.getBrand(),
                 request.getModel(),
                 request.getYear(),
                 request.getMileage()
         );
-        repository.save(vehicle);
-        return toResponse(vehicle);
+        var agg = handler.handle(cmd);
+        return toResponse(agg);
     }
 
     @Override
-    public VehicleResponse changeStatus(String vin, VehicleChangeStatusRequest request) {
-        Vehicle vehicle = repository.load(vin);
-        vehicle.changeStatus(request.getNewStatus());
-        repository.save(vehicle);
-        return toResponse(vehicle);
+    public VehicleResponseDto changeStatus(String vin, VehicleChangeStatusRequestDto request) {
+        ChangeVehicleStatusCommand cmd = new ChangeVehicleStatusCommand(
+                vin,
+                request.getNewStatus()
+                );
+        var agg = handler.handle(cmd);
+        return toResponse(agg);
     }
 
     @Override
-    public VehicleResponse assignOwner(String vin, VehicleAssignOwnerRequest request) {
-        Vehicle vehicle = repository.load(vin);
-        vehicle.assignOwner(request.getOwnerId());
-        repository.save(vehicle);
-        return toResponse(vehicle);
+    public VehicleResponseDto assignOwner(String vin, VehicleAssignOwnerRequestDto request) {
+        AssignOwnerCommand cmd = new AssignOwnerCommand(
+                vin,
+                request.getOwnerId()
+        );
+        var agg = handler.handle(cmd);
+        return toResponse(agg);
     }
 
     @Override
-    public VehicleResponse unassignOwner(String vin) {
-        Vehicle vehicle = repository.load(vin);
-        vehicle.unassignOwner();
-        repository.save(vehicle);
-        return toResponse(vehicle);
+    public VehicleResponseDto unassignOwner(String vin) {
+        UnassignOwnerCommand cmd = new UnassignOwnerCommand(vin);
+        var agg = handler.handle(cmd);
+        return toResponse(agg);
     }
 
-    private VehicleResponse toResponse(Vehicle agg) {
-        VehicleResponse res = new VehicleResponse();
+    private VehicleResponseDto toResponse(VehicleAggregate agg) {
+        VehicleResponseDto res = new VehicleResponseDto();
         res.setVin(agg.getVin());
         res.setBrand(agg.getBrand());
         res.setModel(agg.getModel());

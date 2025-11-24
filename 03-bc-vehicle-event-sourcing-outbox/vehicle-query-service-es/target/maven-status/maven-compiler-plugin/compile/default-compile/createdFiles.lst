@@ -1,0 +1,15 @@
+com\autotech\vehicle\query\VehicleQueryApplication.class
+com\autotech\vehicle\query\messaging\events\VehicleOwnerUnassignedEvent.class
+com\autotech\vehicle\query\controller\VehicleQueryController.class
+com\autotech\vehicle\query\entity\VehicleViewEntity.class
+com\autotech\vehicle\query\mapper\VehicleViewMapper.class
+com\autotech\vehicle\query\messaging\events\VehicleRegisteredEvent.class
+com\autotech\vehicle\query\service\VehicleQueryService.class
+com\autotech\vehicle\query\mapper\VehicleViewMapperImpl.class
+com\autotech\vehicle\query\service\VehicleQueryServiceImpl.class
+com\autotech\vehicle\query\messaging\events\VehicleOwnerAssignedEvent.class
+com\autotech\vehicle\query\messaging\events\VehicleStatusChangedEvent.class
+com\autotech\vehicle\query\repository\VehicleViewRepository.class
+com\autotech\vehicle\query\dto\VehicleViewResponseDto.class
+com\autotech\vehicle\query\messaging\VehicleEventsListener.class
+com\autotech\vehicle\query\messaging\events\VehicleDetailsUpdatedEvent.class

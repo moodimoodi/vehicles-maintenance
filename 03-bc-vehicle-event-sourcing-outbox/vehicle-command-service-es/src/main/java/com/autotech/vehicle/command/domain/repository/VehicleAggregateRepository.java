@@ -1,7 +1,7 @@
 package com.autotech.vehicle.command.domain.repository;
 
-import com.autotech.vehicle.command.domain.aggregate.Vehicle;
-import com.autotech.vehicle.command.eventstore.VehicleEventStore;
+import com.autotech.vehicle.command.domain.aggregate.VehicleAggregate;
+import com.autotech.vehicle.command.eventstore.api.VehicleEventStore;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 
@@ -13,17 +13,17 @@ public class VehicleAggregateRepository {
 
     private final VehicleEventStore eventStore;
 
-    public Vehicle load(String vin) {
+    public VehicleAggregate load(String vin) {
         List<Object> history = eventStore.load(vin);
         if (history.isEmpty()) {
             throw new IllegalArgumentException("Vehicle not found: " + vin);
         }
-        Vehicle agg = new Vehicle();
+        VehicleAggregate agg = new VehicleAggregate();
         agg.replay(history);
         return agg;
     }
 
-    public void save(Vehicle agg) {
+    public void save(VehicleAggregate agg) {
         var events = agg.getUncommittedEvents();
         if (events.isEmpty()) return;
         int expectedVersion = agg.getVersion() - events.size();

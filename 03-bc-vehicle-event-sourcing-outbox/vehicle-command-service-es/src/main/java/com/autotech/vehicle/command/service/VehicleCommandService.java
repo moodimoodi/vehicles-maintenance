@@ -4,13 +4,13 @@ import com.autotech.vehicle.command.dto.*;
 
 public interface VehicleCommandService {
 
-    VehicleResponse register(VehicleRegisterRequest request);
+    VehicleResponseDto register(VehicleRegisterRequestDto request);
 
-    VehicleResponse updateDetails(String vin, VehicleUpdateDetailsRequest request);
+    VehicleResponseDto updateDetails(String vin, VehicleUpdateDetailsRequestDto request);
 
-    VehicleResponse changeStatus(String vin, VehicleChangeStatusRequest request);
+    VehicleResponseDto changeStatus(String vin, VehicleChangeStatusRequestDto request);
 
-    VehicleResponse assignOwner(String vin, VehicleAssignOwnerRequest request);
+    VehicleResponseDto assignOwner(String vin, VehicleAssignOwnerRequestDto request);
 
-    VehicleResponse unassignOwner(String vin);
+    VehicleResponseDto unassignOwner(String vin);
 }

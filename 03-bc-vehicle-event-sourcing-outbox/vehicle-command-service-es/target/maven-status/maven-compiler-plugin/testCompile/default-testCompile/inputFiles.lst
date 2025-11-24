@@ -1,0 +1,4 @@
+C:\workspace_CQRS\autotech-cqrs-demo\03-bc-vehicle-event-sourcing-outbox\vehicle-command-service-es\src\test\java\com\autotech\vehicle\command\domain\aggregate\VehicleTest.java
+C:\workspace_CQRS\autotech-cqrs-demo\03-bc-vehicle-event-sourcing-outbox\vehicle-command-service-es\src\test\java\com\autotech\vehicle\command\messaging\VehicleOutboxRelayTest.java
+C:\workspace_CQRS\autotech-cqrs-demo\03-bc-vehicle-event-sourcing-outbox\vehicle-command-service-es\src\test\java\com\autotech\vehicle\command\service\VehicleCommandServiceImplTest.java
+C:\workspace_CQRS\autotech-cqrs-demo\03-bc-vehicle-event-sourcing-outbox\vehicle-command-service-es\src\test\java\com\autotech\vehicle\command\eventstore\JpaVehicleEventStoreTest.java

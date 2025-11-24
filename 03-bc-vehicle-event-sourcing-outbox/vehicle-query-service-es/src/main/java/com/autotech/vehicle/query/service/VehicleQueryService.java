@@ -1,14 +1,14 @@
 package com.autotech.vehicle.query.service;
 
-import com.autotech.vehicle.query.dto.VehicleViewResponse;
+import com.autotech.vehicle.query.dto.VehicleViewResponseDto;
 
 import java.util.List;
 
 public interface VehicleQueryService {
 
-    VehicleViewResponse getByVin(String vin);
+    VehicleViewResponseDto getByVin(String vin);
 
-    List<VehicleViewResponse> getByOwner(String ownerId);
+    List<VehicleViewResponseDto> getByOwner(String ownerId);
 
-    List<VehicleViewResponse> getByStatus(String status);
+    List<VehicleViewResponseDto> getByStatus(String status);
 }

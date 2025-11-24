@@ -1,7 +1,7 @@
 package com.autotech.vehicle.command.messaging;
 
-import com.autotech.vehicle.command.eventstore.VehicleOutboxEventEntity;
-import com.autotech.vehicle.command.eventstore.VehicleOutboxRepository;
+import com.autotech.vehicle.command.eventstore.jpa.entity.VehicleOutboxEventEntity;
+import com.autotech.vehicle.command.eventstore.jpa.repository.VehicleOutboxRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.core.KafkaTemplate;

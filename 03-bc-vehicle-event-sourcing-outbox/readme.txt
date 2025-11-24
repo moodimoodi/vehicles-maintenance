@@ -87,7 +87,7 @@ API REST de lecture :
 - détail d’un rendez-vous
 
 🧱 Bounded Context: Vehicle
-vehicle-command-service (WRITE Side)
+vehicleAggregate-command-service (WRITE Side)
 
 Responsabilités :
 
@@ -100,17 +100,17 @@ Responsabilités :
 Principales classes
 
 
-vehicle-query-service (READ Side)
+vehicleAggregate-query-service (READ Side)
 
 Responsabilités :
 
 Consommer les events :
 
-- vehicle-registered
+- vehicleAggregate-registered
 
-- vehicle-updated
+- vehicleAggregate-updated
 
-- vehicle-ownership-changed
+- vehicleAggregate-ownership-changed
 
 Mettre à jour les vues de lecture :
 
@@ -123,7 +123,7 @@ Exposer des endpoints de lecture :
 Read Models
 
 vehicle_overview_view
-- Vue : 1 vehicle = 1 ligne (détail complet)
+- Vue : 1 vehicleAggregate = 1 ligne (détail complet)
 
 customer_garage_view
 - Vue : 1 ligne par véhicule appartenant à un customer :

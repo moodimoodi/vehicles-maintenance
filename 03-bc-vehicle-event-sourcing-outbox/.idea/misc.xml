@@ -5,6 +5,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/vehicle-query-service-es/pom.xml" />
+        <option value="$PROJECT_DIR$/vehicle-command-service-es/pom.xml" />
       </list>
     </option>
   </component>

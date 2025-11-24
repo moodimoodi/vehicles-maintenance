@@ -9,7 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="core-api" />
       </profile>
-      <profile name="Annotation profile for vehicle-query-service" enabled="true">
+      <profile name="Annotation profile for maintenance-query-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -18,7 +18,7 @@
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.5.5.Final/mapstruct-1.5.5.Final.jar" />
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar" />
         </processorPath>
-        <module name="vehicle-query-service" />
+        <module name="maintenance-query-service" />
       </profile>
       <profile name="Annotation profile for maintenance-platform" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -31,25 +31,19 @@
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.5.5.Final/mapstruct-1.5.5.Final.jar" />
         </processorPath>
         <module name="maintenance-query-service-es" />
+        <module name="vehicle-command-service-es" />
         <module name="maintenance-command-service" />
-        <module name="vehicle-command-service" />
         <module name="maintenance-command-service-es" />
-      </profile>
-      <profile name="Annotation profile for maintenance-query-service" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.5.Final/mapstruct-processor-1.5.5.Final.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.5.5.Final/mapstruct-1.5.5.Final.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar" />
-        </processorPath>
-        <module name="maintenance-query-service" />
+        <module name="vehicle-query-service-es" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="maintenance-query-service (1)" target="1.5" />
       <module name="maintenance-query-service (2)" target="17" />
+      <module name="vehicle-command-service" target="17" />
+      <module name="vehicle-query-service" target="17" />
+      <module name="vehicleAggregate-command-service-es" target="17" />
+      <module name="vehicleAggregate-query-service-es" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -62,7 +56,11 @@
       <module name="maintenance-query-service (2)" options="-parameters" />
       <module name="maintenance-query-service-es" options="-parameters" />
       <module name="vehicle-command-service" options="-parameters" />
+      <module name="vehicle-command-service-es" options="-parameters" />
       <module name="vehicle-query-service" options="-parameters" />
+      <module name="vehicle-query-service-es" options="-parameters" />
+      <module name="vehicleAggregate-command-service-es" options="-parameters" />
+      <module name="vehicleAggregate-query-service-es" options="-parameters" />
     </option>
   </component>
 </project>

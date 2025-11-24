@@ -20,10 +20,8 @@
 
     <modules>
         <module>core-api</module>
-        <module>maintenance-command-service</module>
-        <module>maintenance-query-service</module>
-        <module>vehicle-command-service</module>
-        <module>vehicle-query-service</module>
+        <module>vehicle-command-service-es</module>
+        <module>vehicle-query-service-es</module>
         <module>maintenance-command-service-es</module>
         <module>maintenance-query-service-es</module>
     </modules>

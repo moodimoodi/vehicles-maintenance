@@ -1,6 +1,6 @@
 package com.autotech.vehicle.query.service;
 
-import com.autotech.vehicle.query.dto.VehicleViewResponse;
+import com.autotech.vehicle.query.dto.VehicleViewResponseDto;
 import com.autotech.vehicle.query.mapper.VehicleViewMapper;
 import com.autotech.vehicle.query.repository.VehicleViewRepository;
 import lombok.RequiredArgsConstructor;
@@ -16,14 +16,14 @@ public class VehicleQueryServiceImpl implements VehicleQueryService {
     private final VehicleViewMapper mapper;
 
     @Override
-    public VehicleViewResponse getByVin(String vin) {
+    public VehicleViewResponseDto getByVin(String vin) {
         return repository.findById(vin)
                 .map(mapper::toDto)
                 .orElseThrow(() -> new IllegalArgumentException("Vehicle not found: " + vin));
     }
 
     @Override
-    public List<VehicleViewResponse> getByOwner(String ownerId) {
+    public List<VehicleViewResponseDto> getByOwner(String ownerId) {
         return repository.findByOwnerId(ownerId)
                 .stream()
                 .map(mapper::toDto)
@@ -31,7 +31,7 @@ public class VehicleQueryServiceImpl implements VehicleQueryService {
     }
 
     @Override
-    public List<VehicleViewResponse> getByStatus(String status) {
+    public List<VehicleViewResponseDto> getByStatus(String status) {
         return repository.findByStatus(status)
                 .stream()
                 .map(mapper::toDto)

@@ -10,7 +10,11 @@
     <file url="file://$PROJECT_DIR$/maintenance-query-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vehicle-command-service-es/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vehicle-command-service-es/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/vehicle-command-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vehicle-query-service-es/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vehicle-query-service-es/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/vehicle-query-service/src/main/java" charset="UTF-8" />
   </component>
 </project>
